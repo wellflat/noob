@@ -11,8 +11,55 @@
             ],
             "group": "build",
             "options": {
-                "cwd": "${workspaceFolder}"
+                "cwd": "${fileDirname}"
             }
-        }
+        },
+        {
+            "type": "cargo",
+            "subcommand": "check",
+            "problemMatcher": [
+                "$rustc"
+            ],
+            "group": "build"
+        },
+        {
+            "type": "cargo",
+            "subcommand": "clean",
+            "problemMatcher": [
+                "$rustc"
+            ],
+            "group": "clean"
+        },
+        {
+            "type": "cargo",
+            "subcommand": "run",
+            "problemMatcher": [
+                "$rustc"
+            ]
+        },
+        {
+            "type": "cargo",
+            "subcommand": "test",
+            "problemMatcher": [
+                "$rustc"
+            ],
+            "group": "test"
+        },
+        {
+            "type": "shell",
+            "command": "cargo",
+            "label": "build(32bit)",
+            "args": [
+                "build"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "options": {
+                "cwd": "${workspaceRoot}"
+            },
+            "problemMatcher": "$rustc"
+        },
     ]
 }

@@ -434,6 +434,16 @@ dependencies = [
 ]
 
 [[package]]
+name = "noob"
+version = "0.1.0"
+dependencies = [
+ "quick-xml 0.17.2 (registry+https://github.com/rust-lang/crates.io-index)",
+ "reqwest 0.10.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "serde 1.0.104 (registry+https://github.com/rust-lang/crates.io-index)",
+ "tokio 0.2.9 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
 name = "num_cpus"
 version = "1.11.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -731,16 +741,6 @@ dependencies = [
 name = "sourcefile"
 version = "0.1.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-
-[[package]]
-name = "steamworks"
-version = "0.1.0"
-dependencies = [
- "quick-xml 0.17.2 (registry+https://github.com/rust-lang/crates.io-index)",
- "reqwest 0.10.1 (registry+https://github.com/rust-lang/crates.io-index)",
- "serde 1.0.104 (registry+https://github.com/rust-lang/crates.io-index)",
- "tokio 0.2.9 (registry+https://github.com/rust-lang/crates.io-index)",
-]
 
 [[package]]
 name = "syn"
